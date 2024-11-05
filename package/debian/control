@@ -1,0 +1,25 @@
+Source: cligen
+Section: utils
+Priority: optional
+Maintainer: Gabriel Ganne <gabriel.ganne@gmail.com>
+Build-Depends:
+ debhelper-compat (= 12),
+ dh-python,
+ python3-all,
+ python3-packaging,
+ python3-setuptools,
+ quilt,
+ tox,
+Standards-Version: 4.5.0
+Homepage: https://gitlab.com/gnutls/cligen
+
+Package: cligen
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-jsonschema
+Description: code and documentation generator for CLI tools written in C.
+ .
+ Cligen produces produces option parsing code and documentation from the same
+ specification file.
+ .
+ Cligen  was born during the process of migrating the GnuTLS CLI infrastructure
+ from GNU AutoGen.

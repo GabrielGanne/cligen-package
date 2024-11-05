@@ -1,0 +1,4 @@
+cli-codegen.py usr/bin/
+cli-docgen.py usr/bin/
+cligen.mk usr/share/cligen/
+cligen.schema.json usr/share/cligen/

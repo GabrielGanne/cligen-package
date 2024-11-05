@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: cligen
+Source: https://gitlab.com/gnutls/cligen
+
+Files: *
+Copyright:
+License: LGPL-2.1

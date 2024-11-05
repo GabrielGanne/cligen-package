@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE = 1
+export PYBUILD_NAME=cligen
+
+%:
+	dh $@ --with quilt --with python3 --buildsystem=pybuild
+
+# explicit env list so that we only test against system version of python3
+override_dh_auto_test:
+	tox -vv -e py3 .
